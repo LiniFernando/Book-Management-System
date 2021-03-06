@@ -1,6 +1,7 @@
 import React from 'react';
 import {Text, View, StyleSheet, ImageBackground} from 'react-native';
 import {useRoute, useNavigation} from '@react-navigation/native';
+import MyComponent from "../components/table";
 
 export default function Home() {
     const navigation = useNavigation();
@@ -17,8 +18,9 @@ export default function Home() {
             <ImageBackground source={image} style={styles.image}>
                 <View style={styles.login}>
                     <Text>Hi {route.params.name}</Text>
-                    <Text style={styles.loginText}>Home</Text>
+                    <Text>This is your book list</Text>
                     {/*< ExampleFour/>*/}
+                    <MyComponent/>
                     <Text style={{color: 'blue'}}
                           onPress={() => navigateToInsertBook()}>
                         Insert Book

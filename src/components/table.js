@@ -61,3 +61,45 @@ const styles = StyleSheet.create({
     btnText: { textAlign: 'center', color: '#fff' }
 });
 */
+///////////////////////////////////////////////////////////////
+import * as React from 'react';
+import { DataTable } from 'react-native-paper';
+
+const MyComponent = () => (
+    <DataTable>
+        <DataTable.Header>
+            <DataTable.Title>ISBN</DataTable.Title>
+            <DataTable.Title numeric>Book Name</DataTable.Title>
+            <DataTable.Title numeric>Author</DataTable.Title>
+            <DataTable.Title numeric>Publisher</DataTable.Title>
+            <DataTable.Title numeric> </DataTable.Title>
+        </DataTable.Header>
+
+        <DataTable.Row>
+            <DataTable.Cell>2484845454</DataTable.Cell>
+            <DataTable.Cell >Jungle Book</DataTable.Cell>
+            <DataTable.Cell >A.S.D.Silva</DataTable.Cell>
+            <DataTable.Cell >Gunasena</DataTable.Cell>
+            <button>Delete</button>
+        </DataTable.Row>
+
+        <DataTable.Row>
+            <DataTable.Cell>2484845454</DataTable.Cell>
+            <DataTable.Cell >Jungle Book</DataTable.Cell>
+            <DataTable.Cell >A.S.D.Silva</DataTable.Cell>
+            <DataTable.Cell >Gunasena</DataTable.Cell>
+            <button>Delete</button>
+        </DataTable.Row>
+
+        {/*<DataTable.Pagination
+            page={1}
+            numberOfPages={3}
+            onPageChange={page => {
+                console.log(page);
+            }}
+            label="1-2 of 6"
+        />*/}
+    </DataTable>
+);
+
+export default MyComponent;
