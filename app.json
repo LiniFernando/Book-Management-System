@@ -1,0 +1,12 @@
+{
+  "name": "BookManagementSystem",
+  "displayName": "BookManagementSystem",
+  "expo": {
+    "name": "BookManagementSystem",
+    "slug": "BookManagementSystem",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
