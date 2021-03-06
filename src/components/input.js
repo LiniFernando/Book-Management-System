@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import { View, Text, TouchableOpacity, TextInput, StyleSheet } from 'react-native'
+import React, {Component} from 'react'
+import {View, TextInput, StyleSheet} from 'react-native'
 
 class Inputs extends Component {
     state = {
@@ -7,34 +7,36 @@ class Inputs extends Component {
         password: ''
     }
     handleEmail = (text) => {
-        this.setState({ email: text })
+        this.setState({email: text})
     }
     handlePassword = (text) => {
-        this.setState({ password: text })
+        this.setState({password: text})
     }
     login = (email, pass) => {
         alert('email: ' + email + ' password: ' + pass)
     }
+
     render() {
         return (
-            <View style = {styles.container}>
-                <TextInput style = {styles.input}
-                           underlineColorAndroid = "transparent"
-                           placeholder = "Email"
-                           placeholderTextColor = "#9a73ef"
-                           autoCapitalize = "none"
-                           onChangeText = {this.handleEmail}/>
+            <View style={styles.container}>
+                <TextInput style={styles.input}
+                           underlineColorAndroid="transparent"
+                           placeholder="Email"
+                           placeholderTextColor="#9a73ef"
+                           autoCapitalize="none"
+                           onChangeText={this.handleEmail}/>
 
-                <TextInput style = {styles.input}
-                           underlineColorAndroid = "transparent"
-                           placeholder = "Password"
-                           placeholderTextColor = "#9a73ef"
-                           autoCapitalize = "none"
-                           onChangeText = {this.handlePassword}/>
+                <TextInput style={styles.input}
+                           underlineColorAndroid="transparent"
+                           placeholder="Password"
+                           placeholderTextColor="#9a73ef"
+                           autoCapitalize="none"
+                           onChangeText={this.handlePassword}/>
             </View>
         )
     }
 }
+
 export default Inputs
 
 const styles = StyleSheet.create({
@@ -45,6 +47,7 @@ const styles = StyleSheet.create({
         margin: 15,
         height: 40,
         borderColor: '#7a42f4',
-        borderWidth: 1
+        borderWidth: 1,
+        borderRadius: 100
     },
 })

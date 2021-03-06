@@ -1,14 +1,14 @@
 import React from 'react';
-import {Text, View, Button, StyleSheet, ImageBackground, TouchableOpacity} from 'react-native';
+import {Text, View, StyleSheet, ImageBackground, TouchableOpacity} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 import Inputs from '../components/input'
 
 export default function SignUp() {
     const navigation = useNavigation();
 
-    function onBackPressed() {
+    /*function onBackPressed() {
         navigation.goBack()
-    }
+    }*/
 
     function navigateToHome() {
         // navigation.navigate("Home", {"name": "Dilini"});
@@ -67,6 +67,7 @@ const styles = StyleSheet.create({
         padding: 10,
         margin: 15,
         height: 40,
+        borderRadius: 100
     },
     submitButtonText: {
         color: 'white',
